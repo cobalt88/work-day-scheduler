@@ -12,21 +12,12 @@
 // var timeBlock11 = document.getElementById('hr-8P');
 // var timeBlock12 = document.getElementById('hr-9P');
 
-
+const timeBlocks = Array.from(document.getElementsByTagName('time-block'));
+console.log(timeBlocks[1])
 
 function updateTime(){
 var currentDate = moment().format('MMMM Do YYYY, h:mm:ss a');
 $("#currentDay").html(currentDate);
-}
-
-const timeBlocks = Array.from(document.getElementsByClassName('time-block'));
-var currentTime = moment().format('HHmm');
-console.log(timeBlocks[0])
-
-for (let i = 0; i < timeBlocks.length; i++) {
-  if (timeBlocks[i].id > currentTime) {
-
-  }
 }
 
 updateTime();

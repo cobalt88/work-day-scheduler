@@ -20,13 +20,12 @@ $("#currentDay").html(currentDate);
 }
 
 const timeBlocks = Array.from(document.getElementsByClassName('time-block'));
-var currentTime = moment().format('HHmm');
-console.log(timeBlocks[0])
+var currentTime = moment().format('H, HH');
+console.log(currentTime)
 
 for (let i = 0; i < timeBlocks.length; i++) {
-  if (timeBlocks[i].id > currentTime) {
-
-  }
+  if (timeBlocks[i].id >
+  
 }
 
 updateTime();
