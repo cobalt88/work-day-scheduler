@@ -43,6 +43,7 @@ for (var i = 9; i < 21; i++) {
   var savedContent = localStorage.getItem(i);
   var textAreaEl = document.querySelector(`#hr${i}`);
   textAreaEl.textContent = savedContent;
+  console.log(textAreaEl);
 }
 
 updateTime();

@@ -38,7 +38,7 @@ $(".saveBtn").on("click", function () {
 });
 
 // load saved content
-for (var i = 9; i < 21; i++) {
+for (var i = 9; i < 24; i++) {
 
   var savedContent = localStorage.getItem(i);
   var textAreaEl = document.querySelector(`#hr${i}`);

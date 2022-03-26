@@ -10,8 +10,6 @@ setInterval(function() {
 
 
 const timeBlocks = Array.from(document.getElementsByClassName('time-block'));
-
-console.log(timeBlocks)
 var currentTime = moment().format('HH');
 // assigns the past present and future classes to the text content areas based on what time it is. 
 for (let i = 0; i < timeBlocks.length; i++) {
@@ -43,6 +41,7 @@ for (var i = 9; i < 21; i++) {
   var savedContent = localStorage.getItem(i);
   var textAreaEl = document.querySelector(`#hr${i}`);
   textAreaEl.textContent = savedContent;
+  console.log(textAreaEl);
 }
 
 updateTime();
