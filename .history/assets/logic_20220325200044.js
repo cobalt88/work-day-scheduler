@@ -37,11 +37,9 @@ $(".saveBtn").on("click", function () {
 
 for (var i = 8; i < 21; i++) {
  var savedContent =  localStorage.getItem(i);
- $(`#${i}`).children('.description').val = savedContent;
+ var textarea = $(`#${i}`)
 
-//  textArea.textContent = 
-
-console.log(savedContent.val);
+console.log(textarea);
 
 }
 

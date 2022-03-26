@@ -30,22 +30,18 @@ for (let i = 0; i < timeBlocks.length; i++) {
 
 $(".saveBtn").on("click", function () {
   var text = $(this).siblings(".description").val();
+  // console.log($(this).siblings('.description').val());
   var timeSlot = $(this).parent().attr("id");
   localStorage.setItem(timeSlot, text);
 });
 
 
 for (var i = 8; i < 21; i++) {
- var savedContent =  localStorage.getItem(i);
- $(`#${i}`).children('.description').val = savedContent;
-
-//  textArea.textContent = 
-
-console.log(savedContent.val);
-
+  $(`#${i}`).val(localStorage.getItem(i));
 }
 
 updateTime();
+addEventListener
 
 
 
