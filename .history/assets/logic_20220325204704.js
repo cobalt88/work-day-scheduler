@@ -35,16 +35,18 @@ $(".saveBtn").on("click", function () {
 });
 
 // function loadContent() {
-for (var i = 9; i < 21; i++) {
-
-  var savedContent = localStorage.getItem(i);
-  var textAreaEl = document.querySelector(`#hr${i}`);
-  textAreaEl.textContent = savedContent;
-  console.log(textAreaEl);
-}
-
+//   var savedContent = localStorage.getItem(9);
+//   var textAreaEl = document.getElementById('hr9');
+//   textAreaEl.textContent = savedContent;
 // }
-// loadContent();
+
+for (var i = 8; i < 21; i++) {
+  var savedContent = localStorage.getItem(i);
+  var textAreaEl = document.getElementById(`hr${i}`);
+  textAreaEl.textContent = savedContent;
+
+}
+loadContent();
 updateTime();
 
 

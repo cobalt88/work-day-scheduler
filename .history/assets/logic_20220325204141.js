@@ -34,17 +34,24 @@ $(".saveBtn").on("click", function () {
   localStorage.setItem(timeSlot, text);
 });
 
-// function loadContent() {
-for (var i = 9; i < 21; i++) {
+function loadContent() {
 
-  var savedContent = localStorage.getItem(i);
-  var textAreaEl = document.querySelector(`#hr${i}`);
-  textAreaEl.textContent = savedContent;
-  console.log(textAreaEl);
+  var textAreaEl = document.getElementById('hr9');
+  console.log(textAreaEl)
 }
 
+// for (var i = 8; i < 21; i++) {
+//   var savedContent = localStorage.getItem(i);
+//   var textAreaEl = $("textarea");
+//   var textArea = $(`#${i}`).children();
+//   textAreaEl.textContent = savedContent;
+
+//  textArea.textContent = 
+
+//  console.log(textAreaEl);
+
 // }
-// loadContent();
+loadContent();
 updateTime();
 
 

@@ -34,17 +34,18 @@ $(".saveBtn").on("click", function () {
   localStorage.setItem(timeSlot, text);
 });
 
-// function loadContent() {
-for (var i = 9; i < 21; i++) {
 
+for (var i = 8; i < 21; i++) {
   var savedContent = localStorage.getItem(i);
-  var textAreaEl = document.querySelector(`#hr${i}`);
-  textAreaEl.textContent = savedContent;
-  console.log(textAreaEl);
+  $("textarea#ExampleMessage").text(result.examplemessage)
+  // var textArea = $(`#${i}`).children();
+
+//  textArea.textContent = 
+
+ console.log(textAreaEl);
+
 }
 
-// }
-// loadContent();
 updateTime();
 
 

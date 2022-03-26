@@ -35,15 +35,14 @@ $(".saveBtn").on("click", function () {
 });
 
 // function loadContent() {
-for (var i = 9; i < 21; i++) {
-
-  var savedContent = localStorage.getItem(i);
-  var textAreaEl = document.querySelector(`#hr${i}`);
-  textAreaEl.textContent = savedContent;
+for (var i = 0; i < 24; i++) {
+  // var savedContent = localStorage.getItem(i);
+  var textAreaEl = document.getElementById(`hr${i}`);
+  // textAreaEl.textContent = savedContent;
   console.log(textAreaEl);
-}
-
 // }
+
+}
 // loadContent();
 updateTime();
 
