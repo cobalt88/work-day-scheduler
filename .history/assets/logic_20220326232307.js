@@ -12,6 +12,14 @@ const timeBlocks = Array.from(document.getElementsByClassName('time-block'));
 
 var currentTime = moment().format('HH');
 
+
+
+// $('.description').each(function() {
+//   var text = $(this).siblings(".hour");
+
+// console.log(text)
+
+// assigns the past present and future classes to the text content areas based on what time it is. 
 for (let i = 0; i < timeBlocks.length; i++) {
 
   var timeBlockId = parseInt(timeBlocks[i].id);

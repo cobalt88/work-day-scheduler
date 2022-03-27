@@ -12,22 +12,29 @@ const timeBlocks = Array.from(document.getElementsByClassName('time-block'));
 
 var currentTime = moment().format('HH');
 
-for (let i = 0; i < timeBlocks.length; i++) {
+$('.description').each(function() {
 
-  var timeBlockId = parseInt(timeBlocks[i].id);
-  var time = parseInt(currentTime);
+  var text = $(this.description.val());
 
-  if (timeBlockId < time) {
-    timeBlocks[i].children[1].className += 'past';
-  }
-  if (timeBlockId > time) {
-    timeBlocks[i].children[1].className += 'future';
-  }
-  if (timeBlockId === time) {
-    timeBlocks[i].children[1].className += 'present';
-  }
-}
-// load saved content
+  console.log(text)
+})
+// assigns the past present and future classes to the text content areas based on what time it is. 
+// for (let i = 0; i < timeBlocks.length; i++) {
+
+//   var timeBlockId = parseInt(timeBlocks[i].id);
+//   var time = parseInt(currentTime);
+
+//   if (timeBlockId < time) {
+//     timeBlocks[i].children[1].className += 'past';
+//   }
+//   if (timeBlockId > time) {
+//     timeBlocks[i].children[1].className += 'future';
+//   }
+//   if (timeBlockId === time) {
+//     timeBlocks[i].children[1].className += 'present';
+//   }
+// }
+// // load saved content
 for (var i = 9; i < 21; i++) {
 
   var savedContent = localStorage.getItem(i);
